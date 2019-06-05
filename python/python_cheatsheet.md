@@ -43,7 +43,24 @@ numbers repeating between 8 to 10 times
 
 [ref](https://stackoverflow.com/questions/4760215/running-shell-command-from-python-and-capturing-the-output)
 
-# Namespaces 
+# Optional match
+```Python
+>>> match = re.search("home(brew)?", "home")
+>>> match.group(1)
+home
+```
+
+## Differences between `()` and `[]`
+* `[]` denotes a character class, what to match, e.g. `[a-z0-9]` matches one character of the class range `a-z` or `0-9`
+* `()` denotes a `capture`. `(a-z0-9)` captures the extract string `a-z0-9`. It is a grouping construct that has a precedence order.
+
+
+## Differences between `re.match` and `re.search`
+`match()` function only checks if the RE matches at the beginning of the string while `search()` will scan forward through the string for a match
+[reference](https://docs.python.org/2/howto/regex.html#match-versus-search)
+
+
+# Namespaces for python variables
 ```Python
 >>> dir()  # inspect local namespace
 ```
@@ -96,7 +113,6 @@ print(args.clstNo)
 ```
 
 # Using `subprocess` to retrive shell outputs
-
 ```python
 import subprocess
 ```
@@ -106,6 +122,12 @@ subprocess.check_output(["ls", "../data"]) # alternatively
 subprocess.check_output("grep 'heatdap2*' ./*json", shell=True)
 ```
 If the returned status is 2, it means that your shell command is problematic.
+`shell=False` disables all shell based features, but does not suffer from security vulnerability; see the Note in the `Popen` constructor documentation for helpful hints in getting `shell=False` to work.
+
+When using `shell=True`, `pipes.quote()` can be used to properly escape whitespace
+and shell metacharacters in strings that are going to be used to construct
+shell commands.
+[ref](https://docs.python.org/2/library/subprocess.html#frequently-used-arguments)
 
 ## approach with more fine-grained control
 For Python 3.5+
