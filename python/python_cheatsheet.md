@@ -1,3 +1,26 @@
+# Table of content
+- [Return sorted index of a list](#return-sorted-index-of-a-list)
+- [Transposing list of lists](#transposing-list-of-lists)
+- [Types](#types)
+- [Objects don't know their own names](#objects-dont-know-their-own-names)
+- [List comprehension with `if`, `else`](#list-comprehension-with-if-else)
+- [Regular expression](#regular-expression)
+  * [find pattern that repeats n times](#find-pattern-that-repeats-n-times)
+	* [Optional match](#optional-match)
+  * [Differences between `()` and `[]`](#differences-between--and-)
+  * [Differences between `re.match` and `re.search`](#differences-between-rematch-and-research)
+- [Namespaces for python variables](#namespaces-for-python-variables)
+- [Concatenating dictionaries and list:](#concatenating-dictionaries-and-list)
+- [Logging](#logging)
+  * [Debug: when NO log file is written](#debug-when-no-log-file-is-written)
+- [Using the argument parser](#using-the-argument-parser)
+- [Using `subprocess` to retrive shell outputs](#using-subprocess-to-retrive-shell-outputs)
+  * [simpliest approach](#simpliest-approach)
+  * [approach with more fine-grained control](#approach-with-more-fine-grained-control)
+  * [Finding array types](#finding-array-types)
+- [Handling date types](#handling-date-types)
+
+
 # Return sorted index of a list 
 [ref](http://stackoverflow.com/questions/7851077/how-to-return-index-of-a-sorted-list)
 
@@ -43,7 +66,7 @@ numbers repeating between 8 to 10 times
 
 [ref](https://stackoverflow.com/questions/4760215/running-shell-command-from-python-and-capturing-the-output)
 
-# Optional match
+## Optional match
 ```Python
 >>> match = re.search("home(brew)?", "home")
 >>> match.group(1)
