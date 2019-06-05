@@ -1,3 +1,23 @@
+# Table of content 
+- [printing time stamp](#printing-time-stamp)
+- [Reference:](#reference)
+- [find full path to a file](#find-full-path-to-a-file)
+- [Other useful command:](#other-useful-command)
+- [system monitoring](#system-monitoring)
+- [free memory](#free-memory)
+- [list-of-open-files (lsof)](#list-of-open-files-lsof)
+- [Redirecting outputs from `stderr`](#redirecting-outputs-from-stderr)
+- [Watching log files](#watching-log-files)
+- [watching job](#watching-job)
+- [find position in job queue](#find-position-in-job-queue)
+- [transfer files between machines](#transfer-files-between-machines)
+- [count no. of columns in a csv file](#count-no-of-columns-in-a-csv-file)
+- [umask](#umask)
+- [find files](#find-files)
+- [grep](#grep)
+- [check architecture](#check-architecture)
+- [run command without fear of network disconnection](#run-command-without-fear-of-network-disconnection)
+
 # printing time stamp  
 ```bash
 $ date "+%Y-%m-%d_%H-%M-%S"
