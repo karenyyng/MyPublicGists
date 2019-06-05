@@ -1,6 +1,8 @@
 # printing time stamp  
+```bash
 $ date "+%Y-%m-%d_%H-%M-%S"
 2019-06-05_14-49-16
+```
 
 # Reference:
 [ref](http://www.oliverelliott.org/article/computing/ref_unix/)
