@@ -1,7 +1,8 @@
-# Table of content 
-- [printing time stamp](#printing-time-stamp)
-- [Reference:](#reference)
-- [find full path to a file](#find-full-path-to-a-file)
+# Table of content
+
+<!-- toc -->
+- [Printing time stamp](#printing-time-stamp)
+- [Find full path to a file](#find-full-path-to-a-file)
 - [Other useful command:](#other-useful-command)
 - [system monitoring](#system-monitoring)
 - [free memory](#free-memory)
@@ -17,17 +18,18 @@
 - [grep](#grep)
 - [check architecture](#check-architecture)
 - [run command without fear of network disconnection](#run-command-without-fear-of-network-disconnection)
+- [Reference:](#reference)
 
-# printing time stamp  
+<!-- tocstop -->
+
+# Printing time stamp  
 ```bash
 $ date "+%Y-%m-%d_%H-%M-%S"
 2019-06-05_14-49-16
 ```
 
-# Reference:
-[ref](http://www.oliverelliott.org/article/computing/ref_unix/)
 
-# find full path to a file 
+# Find full path to a file 
 ```
 $ readlink -f filename  # on Linux
 $ greadlink -f filename  # on Mac
@@ -134,3 +136,6 @@ $ uname
 ```
 $ nohup COMMAND
 ```
+g
+# Reference:
+[ref](http://www.oliverelliott.org/article/computing/ref_unix/)
