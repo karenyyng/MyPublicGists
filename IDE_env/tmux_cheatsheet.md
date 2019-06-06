@@ -1,3 +1,35 @@
+# Table of content
+
+<!-- toc -->
+
+- [Installing Tmux](#installing-tmux)
+  * [Basics of `Tmux`](#basics-of-tmux)
+  * [Now we can start up a new `tmux` session](#now-we-can-start-up-a-new-tmux-session)
+  * [Detaching sessions by force:](#detaching-sessions-by-force)
+  * [splittting your terminal window with Tmux](#splittting-your-terminal-window-with-tmux)
+    + [colors in tmux](#colors-in-tmux)
+    + [Splitting and moving around panes](#splitting-and-moving-around-panes)
+  * [search pane](#search-pane)
+  * [convert pane from / to window](#convert-pane-from--to-window)
+    + [resizing pane](#resizing-pane)
+    + [To add a window or tab that you can switch to...](#to-add-a-window-or-tab-that-you-can-switch-to)
+  * [`Tmux` windows (tabs)](#tmux-windows-tabs)
+  * [`Tmux sessions`](#tmux-sessions)
+  * [Saving / restoring tmux sessions with [`tmux resurrect`](https://github.com/tmux-plugins/tmux-resurrect)](#saving--restoring-tmux-sessions-with-tmux-resurrecthttpsgithubcomtmux-pluginstmux-resurrect)
+  * [Refresh the `.tmux.conf` file](#refresh-the-tmuxconf-file)
+  * [Making sure that terminal colors are preserved](#making-sure-that-terminal-colors-are-preserved)
+  * [Making sure that `iTerm2`, `Tmux` and `Vim` works well with system clipboard](#making-sure-that-iterm2-tmux-and-vim-works-well-with-system-clipboard)
+  * [remote copy-and-paste with `Vim` and `Tmux`](#remote-copy-and-paste-with-vim-and-tmux)
+  * [Making sure that `Tmux` and `Vim` work well moving stuff around](#making-sure-that-tmux-and-vim-work-well-moving-stuff-around)
+- [showing all the key-bindings](#showing-all-the-key-bindings)
+- [solution to common problems](#solution-to-common-problems)
+- [Possible issues with group permissions](#possible-issues-with-group-permissions)
+  * [handling conflicts of different `Tmux` versions](#handling-conflicts-of-different-tmux-versions)
+- [set tmux background bar color on a per-session basis](#set-tmux-background-bar-color-on-a-per-session-basis)
+- [References are:](#references-are)
+
+<!-- tocstop -->
+
 Title: Tmux project sessions  
 Date: 2014-12-24 17:00 
 Tags: Tmux, learn-X-in-Y-minutes   

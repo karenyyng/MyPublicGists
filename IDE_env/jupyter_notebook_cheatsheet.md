@@ -1,3 +1,14 @@
+# Table of content
+
+<!-- toc -->
+
+- [Cheatsheet for using Jupyter notebook](#cheatsheet-for-using-jupyter-notebook)
+  * [display more lines without having a scroll bar for the output](#display-more-lines-without-having-a-scroll-bar-for-the-output)
+  * [cell magic vs line magic](#cell-magic-vs-line-magic)
+  * [display matplotlib plots](#display-matplotlib-plots)
+
+<!-- tocstop -->
+
 # Cheatsheet for using Jupyter notebook
 
 ## display more lines without having a scroll bar for the output

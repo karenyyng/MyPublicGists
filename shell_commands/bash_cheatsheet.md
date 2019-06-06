@@ -1,6 +1,7 @@
 # Table of content
 
 <!-- toc -->
+
 - [Printing time stamp](#printing-time-stamp)
 - [Find full path to a file](#find-full-path-to-a-file)
 - [Other useful command:](#other-useful-command)

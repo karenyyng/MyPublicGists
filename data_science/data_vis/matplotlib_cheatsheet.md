@@ -1,3 +1,33 @@
+# Table of content
+
+<!-- toc -->
+
+- [All things about contour plot](#all-things-about-contour-plot)
+  * [Contour plot with log axes](#contour-plot-with-log-axes)
+  * [Making contour plot or so with log colors](#making-contour-plot-or-so-with-log-colors)
+  * [similarly specifying color range for contour plot](#similarly-specifying-color-range-for-contour-plot)
+  * [putting color bar on a different axis](#putting-color-bar-on-a-different-axis)
+- [Plot aspects](#plot-aspects)
+  * [making plots with multiple panels (subplots)](#making-plots-with-multiple-panels-subplots)
+    + [perhaps the best approach](#perhaps-the-best-approach)
+    + [More complicated approach](#more-complicated-approach)
+    + [slightly less complicated approach](#slightly-less-complicated-approach)
+    + [Colormap](#colormap)
+      - [Revert colormap](#revert-colormap)
+  * [Rotate axis labels](#rotate-axis-labels)
+  * [Adjust subplots spacing](#adjust-subplots-spacing)
+  * [colorbar label size](#colorbar-label-size)
+- [plot frame](#plot-frame)
+    + [[remove upper / right axis ticks]](#remove-upper--right-axis-ticks)
+    + [[change the direction of the ticks]](#change-the-direction-of-the-ticks)
+  * [color blind friendly map](#color-blind-friendly-map)
+- [pandas scattermatrix plotting](#pandas-scattermatrix-plotting)
+- [pandas KDE](#pandas-kde)
+- [legend](#legend)
+- [legend outside plot](#legend-outside-plot)
+
+<!-- tocstop -->
+
 # All things about contour plot
 ## Contour plot with log axes 
 [Post](http://matplotlib.1069221.n5.nabble.com/contour-plots-with-logarithmic-axes-td8732.html)

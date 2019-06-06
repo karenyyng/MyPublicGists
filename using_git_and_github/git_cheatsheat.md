@@ -1,3 +1,30 @@
+# Table of content
+
+<!-- toc -->
+
+  * [find the git commit SHA hash](#find-the-git-commit-sha-hash)
+  * [find root directory](#find-root-directory)
+  * [checkout specific files from another branch](#checkout-specific-files-from-another-branch)
+  * [stash](#stash)
+    + [show the content of each stash](#show-the-content-of-each-stash)
+    + [Reapplying / popping a specific stash](#reapplying--popping-a-specific-stash)
+  * [tags](#tags)
+  * [Or if your git repository does not contain the remote branch, do:](#or-if-your-git-repository-does-not-contain-the-remote-branch-do)
+  * [copy dir/files from another branch](#copy-dirfiles-from-another-branch)
+  * [How to unstage file so it does not get committed](#how-to-unstage-file-so-it-does-not-get-committed)
+  * [How to delete stuff from git commit](#how-to-delete-stuff-from-git-commit)
+  * [Removing specific files in a tree](#removing-specific-files-in-a-tree)
+  * [set new remote url origin](#set-new-remote-url-origin)
+  * [show the content of a file from a specific commit](#show-the-content-of-a-file-from-a-specific-commit)
+  * [set up multiple github user - for non-work purpose … pain in the butt](#set-up-multiple-github-user---for-non-work-purpose--pain-in-the-butt)
+  * [git view trees of commits](#git-view-trees-of-commits)
+  * [git view what file were changed in a certain commit :](#git-view-what-file-were-changed-in-a-certain-commit-)
+- [File recovery commands](#file-recovery-commands)
+- [push new local branch to remote](#push-new-local-branch-to-remote)
+- [grep files from previous commit](#grep-files-from-previous-commit)
+
+<!-- tocstop -->
+
 ## find the git commit SHA hash 
 ```bash
 $ git describe --always

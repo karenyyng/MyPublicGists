@@ -1,3 +1,16 @@
+# Table of content
+
+<!-- toc -->
+
+- [Prerequisite](#prerequisite)
+  * [Software](#software)
+  * [Dynamically forwarding remote activities](#dynamically-forwarding-remote-activities)
+  * [Configuring `Proxy SwitchyOmega`](#configuring-proxy-switchyomega)
+  * [Using the proxy](#using-the-proxy)
+  * [Adding password to the IPython notebook profile](#adding-password-to-the-ipython-notebook-profile)
+
+<!-- tocstop -->
+
 This post guides you through using an IPython notebook with a kernel running on a remote server / machine
 in the most *painless* way possible, even if your remote machine is behind a firewall.
 

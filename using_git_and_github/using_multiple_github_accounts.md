@@ -1,3 +1,12 @@
+# Table of content
+
+<!-- toc -->
+
+- [setting up authentication for each Github account](#setting-up-authentication-for-each-github-account)
+- [config file](#config-file)
+
+<!-- tocstop -->
+
 # setting up authentication for each Github account
 [ref](https://gist.github.com/jexchan/2351996/)
 

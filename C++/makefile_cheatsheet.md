@@ -1,3 +1,12 @@
+# Table of content
+
+<!-- toc -->
+
+- [what the funny symbols mean](#what-the-funny-symbols-mean)
+  * [automatic variables](#automatic-variables)
+
+<!-- tocstop -->
+
 # what the funny symbols mean
 ```
 ~ current directory

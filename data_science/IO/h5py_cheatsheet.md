@@ -1,3 +1,14 @@
+# Table of content
+
+<!-- toc -->
+
+- [traversing the directory keys of a `hdf5` file](#traversing-the-directory-keys-of-a-hdf5-file)
+- [navigating different keys of a file](#navigating-different-keys-of-a-file)
+  * [guide to hdf5](#guide-to-hdf5)
+- [to traverse the hdf5 directory structure and apply a function to the arguments:](#to-traverse-the-hdf5-directory-structure-and-apply-a-function-to-the-arguments)
+
+<!-- tocstop -->
+
 # traversing the directory keys of a `hdf5` file 
 ```Python
 from __future__ import print_function

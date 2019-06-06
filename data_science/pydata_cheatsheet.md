@@ -1,3 +1,12 @@
+# Table of content
+
+<!-- toc -->
+
+- [Numpy](#numpy)
+  * [making grids / regular grid points](#making-grids--regular-grid-points)
+
+<!-- tocstop -->
+
 # Numpy
 
 ## making grids / regular grid points 

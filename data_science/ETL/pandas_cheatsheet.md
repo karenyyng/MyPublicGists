@@ -1,3 +1,22 @@
+# Table of content
+
+<!-- toc -->
+
+- [References](#references)
+- [Groupby, manipulate, transforming a df](#groupby-manipulate-transforming-a-df)
+  * [How to use groupby and apply functions](#how-to-use-groupby-and-apply-functions)
+  * [Finding out what groups there are after the groupby:](#finding-out-what-groups-there-are-after-the-groupby)
+  * [Examine each group](#examine-each-group)
+  * [Iterating over groups](#iterating-over-groups)
+  * [return groups of objects as dictionary of df, do](#return-groups-of-objects-as-dictionary-of-df-do)
+  * [Scatter matrix plot](#scatter-matrix-plot)
+  * [Dropping columns from pandas dataframe](#dropping-columns-from-pandas-dataframe)
+  * [displaying dataframe in Jupyter notebook](#displaying-dataframe-in-jupyter-notebook)
+    + [rounding to 2 d.p. for floats](#rounding-to-2-dp-for-floats)
+    + [highlighting cells:](#highlighting-cells)
+
+<!-- tocstop -->
+
 # References 
 * [Python for data analysis Ch. 9]
 

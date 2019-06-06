@@ -1,3 +1,17 @@
+# Table of content
+
+<!-- toc -->
+
+- [making simple plot](#making-simple-plot)
+  * [to show plot within Jupyter notebook](#to-show-plot-within-jupyter-notebook)
+  * [use ColumnDataSource](#use-columndatasource)
+  * [adding legend to plot with specific location](#adding-legend-to-plot-with-specific-location)
+  * [saving the plot to html](#saving-the-plot-to-html)
+  * [bokeh modules / objects to import](#bokeh-modules--objects-to-import)
+  * [arrange plots in a layout with widgets](#arrange-plots-in-a-layout-with-widgets)
+
+<!-- tocstop -->
+
 # making simple plot 
 
 ## to show plot within Jupyter notebook 

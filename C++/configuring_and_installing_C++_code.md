@@ -1,3 +1,20 @@
+# Table of content
+
+<!-- toc -->
+
+- [concepts](#concepts)
+  * [autoconf](#autoconf)
+  * [configure](#configure)
+  * [make](#make)
+  * [cmake](#cmake)
+  * [libraries](#libraries)
+- [paths to find stuff](#paths-to-find-stuff)
+  * [`LD_LIBRARY_PATH`](#ld_library_path)
+  * [`INCLUDE` path](#include-path)
+  * [`RPATH`](#rpath)
+
+<!-- tocstop -->
+
 # concepts 
 
 ## autoconf

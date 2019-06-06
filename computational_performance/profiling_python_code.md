@@ -1,3 +1,20 @@
+# Table of content
+
+<!-- toc -->
+
+- [batch profiling](#batch-profiling)
+  * [use `cProfile`](#use-cprofile)
+    + [saving the stats](#saving-the-stats)
+  * [visualizing `cProfile` call tree if needed](#visualizing-cprofile-call-tree-if-needed)
+- [profiling functions within ipython](#profiling-functions-within-ipython)
+  * [Or use Intel Vtune if possible](#or-use-intel-vtune-if-possible)
+    + [How to set up a machine to use the HPC performance profiling mode](#how-to-set-up-a-machine-to-use-the-hpc-performance-profiling-mode)
+    + [pros and cons for using Vtune for profiling Python](#pros-and-cons-for-using-vtune-for-profiling-python)
+      - [profiling with vtune](#profiling-with-vtune)
+- [IO profiling](#io-profiling)
+
+<!-- tocstop -->
+
 # batch profiling
 ## use `cProfile`
 [tutorial](https://docs.python.org/2/library/profile.html#module-cProfile)

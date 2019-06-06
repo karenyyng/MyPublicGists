@@ -1,3 +1,22 @@
+# Table of content
+
+<!-- toc -->
+
+    + [Basic movements in non-insert mode](#basic-movements-in-non-insert-mode)
+    + [Vim commands](#vim-commands)
+  * [reload .vimrc file](#reload-vimrc-file)
+- [configuring Eclim for Java / Scala autocompletion](#configuring-eclim-for-java--scala-autocompletion)
+- [append character / string to end of line](#append-character--string-to-end-of-line)
+- [Debug `~/.vimrc`](#debug-vimrc)
+- [Navigating through large projects with multiple files](#navigating-through-large-projects-with-multiple-files)
+- [Search and replace](#search-and-replace)
+  * [search and replace with regex](#search-and-replace-with-regex)
+    + [simple example](#simple-example)
+    + [more complicated example](#more-complicated-example)
+- [search current word under cursor](#search-current-word-under-cursor)
+
+<!-- tocstop -->
+
 Note: `C-` means pressing control button, not capital C.
 By default you are NOT in the insert mode, to enter the insert mode press `i`
 ### Basic movements in non-insert mode
