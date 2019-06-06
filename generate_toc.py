@@ -15,10 +15,11 @@ if __name__ == "__main__":
     toc_start = "<!-- toc -->"
 
     for dirpath, dirnames, files in os.walk(topdir):
-        for name in files:
+        for ix, name in enumerate(files):
             if name.endswith(exten):
                 file_path = f"{dirpath}/{name}"
-                print(f"!!!! ---Processing {file_path} --- !!!")
+                print(f"!!!! ---Processing " +
+                      f"{file_path} {ix + 1} out of {len(files)}--- !!!")
                 with open(file_path) as f:
                     file_content = "".join(f.readlines())
 
