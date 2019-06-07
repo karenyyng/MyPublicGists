@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-generate table-of-content (toc) for each of the markdown notes
+Generate table-of-content (toc) for each of the markdown notes in a directory
+
+This requires Python 3.6+
 """
 import os
 import subprocess
