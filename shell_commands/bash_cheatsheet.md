@@ -4,22 +4,23 @@
 
 - [Printing time stamp](#printing-time-stamp)
 - [Find full path to a file](#find-full-path-to-a-file)
-- [Other useful command:](#other-useful-command)
-- [system monitoring](#system-monitoring)
-- [free memory](#free-memory)
-- [list-of-open-files (lsof)](#list-of-open-files-lsof)
+- [Running command in parallel : PDSH](#running-command-in-parallel--pdsh)
+- [Xargs](#xargs)
+- [System monitoring](#system-monitoring)
+- [Free memory from linux host](#free-memory-from-linux-host)
+- [List-of-open-files (lsof)](#list-of-open-files-lsof)
 - [Redirecting outputs from `stderr`](#redirecting-outputs-from-stderr)
 - [Watching log files](#watching-log-files)
-- [watching job](#watching-job)
-- [find position in job queue](#find-position-in-job-queue)
-- [transfer files between machines](#transfer-files-between-machines)
-- [count no. of columns in a csv file](#count-no-of-columns-in-a-csv-file)
-- [umask](#umask)
-- [find files](#find-files)
-- [grep](#grep)
-- [check architecture](#check-architecture)
-- [run command without fear of network disconnection](#run-command-without-fear-of-network-disconnection)
-- [Reference:](#reference)
+- [Watching job](#watching-job)
+- [Find position in job queue](#find-position-in-job-queue)
+- [Transfer files between machines](#transfer-files-between-machines)
+- [Count no. of columns in a csv file](#count-no-of-columns-in-a-csv-file)
+- [Changing permission with umask](#changing-permission-with-umask)
+- [Find files](#find-files)
+- [Grep](#grep)
+- [Check hardware architecture](#check-hardware-architecture)
+- [Run command without fear of network disconnection](#run-command-without-fear-of-network-disconnection)
+- [Reference for a list of linux commands](#reference-for-a-list-of-linux-commands)
 
 <!-- tocstop -->
 
@@ -37,13 +38,16 @@ $ greadlink -f filename  # on Mac
 ```
 [SO post](http://stackoverflow.com/questions/5265702/how-to-get-full-path-of-a-file)
 
-# Other useful command:
+# Running command in parallel : PDSH 
 ```
 pdsh   # issue commands to groups of hosts in parallel
+```
+# Xargs 
+```
 ls *.txt | xargs <OTHER BASH COMMAND>
 ```
 
-# system monitoring
+# System monitoring
 ```
 $ top
 $ 1  # shows CPU usage breakdown by each CPU in a multiple core system
@@ -54,11 +58,11 @@ htop
 ```
 for more detailed diagnostics
 
-# free memory 
+# Free memory from linux host
 [ref](http://unix.stackexchange.com/questions/87908/how-do-you-empty-the-buffers-and-cache-on-a-linux-system)
 
 
-# list-of-open-files (lsof)
+# List-of-open-files (lsof)
 ```
 $ lsof +D /path_to_file
 ```
@@ -77,7 +81,7 @@ module avail 2>&1
 tail -f output.log
 ```
 
-# watching job 
+# Watching job 
 ```
 watch -n 120 job_command 
 # e.g.
@@ -85,45 +89,44 @@ watch -n 120 squeue karenyng
 ```
 change the output every 120 seconds
 
-# find position in job queue
+# Find position in job queue
 ```
 squeue -p knl | grep -B 10000000 karenyng | wc -l
 ```
 
-# transfer files between machines 
+# Transfer files between machines 
 ```
 scp -3 -r $REMOTE_MACHINE_1:$REMOTE_DIR_LOC $REMOTE_MACHINE_2:$REMOTE_DESTINATION
 ```
-# count no. of columns in a csv file
+# Count no. of columns in a csv file
 ```
 !head -1 cs_pos_data.csv | awk -F',' ' { print NF }'  ## only count the first line
 awk -F',' ' { print NF }' FILE.csv | sort | uniq -c   ## count how many lines and delimiters there are
 ```
 
-# umask
+# Changing permission with umask
 ```
 umask 002
 ```
 002 means 777 - 002 = 775 deafult directory permisions    
 and 666 - 002 = 664 for default file permissions
 
-# find files 
+# Find files 
 If i want to find files with names `odbc.ini`
 ```
 sudo find /dir/to/search -name odbc*.ini 
-
-## if cannot print directly as log message in some special terminal types, use `2>/dev/null`
-find /dir/to/search -name odbc*.ini 2>/dev/null
 ```
+if you cannot print directly as log message in some special terminal types, use `2>/dev/null`
+`find /dir/to/search -name odbc*.ini 2>/dev/null`
 
-# grep 
+# Grep 
 grep recursively from a specific file extension type
 ```
 grep -r -i --include \*.py $A_PATH
 ```
 [link](https://stackoverflow.com/questions/12516937/grep-but-only-certain-file-extensions)
 
-# check architecture 
+# Check hardware architecture 
 if we are using on linux 
 ```
 $ lscpu
@@ -133,10 +136,10 @@ If not, use the following command for checking the operating system name
 $ uname
 ```
 
-# run command without fear of network disconnection 
+# Run command without fear of network disconnection 
 ```
 $ nohup COMMAND
 ```
-g
-# Reference:
-[ref](http://www.oliverelliott.org/article/computing/ref_unix/)
+
+# Reference for a list of linux commands
+[ref link](http://www.oliverelliott.org/article/computing/ref_unix/)
