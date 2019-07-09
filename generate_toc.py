@@ -3,6 +3,9 @@
 Generate table-of-content (toc) for each of the markdown notes in a directory
 
 This requires Python 3.6+
+
+npm with markdown-toc
+$ npm install -g markdown-toc
 """
 import os
 import subprocess
