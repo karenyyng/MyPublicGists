@@ -32,8 +32,10 @@
 [ref](http://stackoverflow.com/questions/6473679/python-list-of-lists-transpose-without-zipm-thing)
 
 # Adding types hints to function definitions 
-[ref](https://docs.python.org/3/library/typing.html)
+[ref1](https://docs.python.org/3/library/typing.html)
+[ref2](https://www.python.org/dev/peps/pep-3107/#syntax)
 [SO answers](https://stackoverflow.com/questions/38727520/adding-default-parameter-value-with-type-hint-in-python)
+
 
 ```
 def this_function(a: str, b: str = "hello", c: dict = {}):
