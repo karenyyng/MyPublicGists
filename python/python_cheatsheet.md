@@ -2,10 +2,9 @@
 
 <!-- toc -->
 
-- [Table of content](#table-of-content)
 - [Return sorted index of a list](#return-sorted-index-of-a-list)
 - [Transposing list of lists](#transposing-list-of-lists)
-- [Types](#types)
+- [Adding types hints to function definitions](#adding-types-hints-to-function-definitions)
 - [Objects don't know their own names](#objects-dont-know-their-own-names)
 - [List comprehension with `if`, `else`](#list-comprehension-with-if-else)
 - [Regular expression](#regular-expression)
@@ -26,37 +25,20 @@
 
 <!-- tocstop -->
 
-# Table of content
-- [Return sorted index of a list](#return-sorted-index-of-a-list)
-- [Transposing list of lists](#transposing-list-of-lists)
-- [Types](#types)
-- [Objects don't know their own names](#objects-dont-know-their-own-names)
-- [List comprehension with `if`, `else`](#list-comprehension-with-if-else)
-- [Regular expression](#regular-expression)
-  * [find pattern that repeats n times](#find-pattern-that-repeats-n-times)
-	* [Optional match](#optional-match)
-  * [Differences between `()` and `[]`](#differences-between--and-)
-  * [Differences between `re.match` and `re.search`](#differences-between-rematch-and-research)
-- [Namespaces for python variables](#namespaces-for-python-variables)
-- [Concatenating dictionaries and list:](#concatenating-dictionaries-and-list)
-- [Logging](#logging)
-  * [Debug: when NO log file is written](#debug-when-no-log-file-is-written)
-- [Using the argument parser](#using-the-argument-parser)
-- [Using `subprocess` to retrive shell outputs](#using-subprocess-to-retrive-shell-outputs)
-  * [simpliest approach](#simpliest-approach)
-  * [approach with more fine-grained control](#approach-with-more-fine-grained-control)
-  * [Finding array types](#finding-array-types)
-- [Handling date types](#handling-date-types)
-
-
 # Return sorted index of a list 
 [ref](http://stackoverflow.com/questions/7851077/how-to-return-index-of-a-sorted-list)
 
 # Transposing list of lists
 [ref](http://stackoverflow.com/questions/6473679/python-list-of-lists-transpose-without-zipm-thing)
 
-# Types 
-[ref](https://docs.python.org/2/library/types.html)
+# Adding types hints to function definitions 
+[ref](https://docs.python.org/3/library/typing.html)
+[SO answers](https://stackoverflow.com/questions/38727520/adding-default-parameter-value-with-type-hint-in-python)
+
+```
+def this_function(a: str, b: str = "hello", c: dict = {}):
+	return
+```
 
 # Objects don't know their own names 
 [SO post](http://stackoverflow.com/questions/2553354/how-to-get-a-variable-name-as-a-string-in-python)
