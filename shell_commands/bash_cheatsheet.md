@@ -120,6 +120,7 @@ Then `find` will look for a pattern match of the file name you specified
 recursively.
 If you cannot print directly as log message in some special terminal types, use `2>/dev/null`
 `find /dir/to/search -name odbc*.ini 2>/dev/null`
+[ref](https://www.linode.com/docs/tools-reference/tools/find-files-in-linux-using-the-command-line/)
 
 # Grep 
 grep recursively from a specific file extension type
