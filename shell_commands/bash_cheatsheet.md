@@ -114,9 +114,11 @@ and 666 - 002 = 664 for default file permissions
 # Find files 
 If i want to find files with names `odbc.ini`
 ```
-sudo find /dir/to/search -name odbc*.ini 
+find /dir/to/search -name odbc*.ini 
 ```
-if you cannot print directly as log message in some special terminal types, use `2>/dev/null`
+Then `find` will look for a pattern match of the file name you specified
+recursively.
+If you cannot print directly as log message in some special terminal types, use `2>/dev/null`
 `find /dir/to/search -name odbc*.ini 2>/dev/null`
 
 # Grep 
@@ -141,5 +143,19 @@ $ uname
 $ nohup COMMAND
 ```
 
+# Find the number of lines in a csv or text file 
+```bash
+$ wc -l FILENAME
+```
+# Find the number of delimited columns in csv or text file
+```bash 
+$ head -1 FILENAME | awk -F',' '{print $NF}'
+```
+In the above example we were counting the number of ',' strings. [SO ref](https://stackoverflow.com/questions/18351284/how-to-get-the-count-of-fields-in-a-delimited-string)
+`$NF` refers to the correct number of fields in the file, not the number of
+delimiters.
+
 # Reference for a list of linux commands
 [ref link](http://www.oliverelliott.org/article/computing/ref_unix/)
+
+
