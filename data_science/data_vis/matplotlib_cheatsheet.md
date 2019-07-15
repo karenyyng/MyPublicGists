@@ -31,16 +31,18 @@
 # All things about contour plot
 ## Contour plot with log axes 
 [Post](http://matplotlib.1069221.n5.nabble.com/contour-plots-with-logarithmic-axes-td8732.html)
-```Python
 # approach 1 
+```Python
 z = np.arange(100).reshape((10,10)) 
 x = np.logspace(0, 4, 10) 
 y = np.logspace(0, 4, 10) 
 
 ax1 = subplot(121) 
 ax1.contour(np.log10(x), np.log10(y), z) 
+```
 
 # approach 2 
+```Python
 ax2 = subplot(122) 
 ax2.set_xscale("log") 
 ax2.set_yscale("log") 
@@ -60,7 +62,7 @@ Use `vmin` and `vmax` keyword.
 
 ## putting color bar on a different axis
 [SO post](http://stackoverflow.com/questions/13784201/matplotlib-2-subplots-1-colorbar)
-```
+```python
 ig, axes = plt.subplots(nrows=2, ncols=2)
 for ax in axes.flat:
     im = ax.imshow(np.random.random((10,10)), vmin=0, vmax=1)
@@ -75,8 +77,6 @@ fig.colorbar(im, cax=cbar_ax)
 plt.axes().set_aspect('equal')   # ratio of long to short dimensions
 ```
 when you want the X and Y axes have the same size dimensions for each unit.
-
-
 
 
 ## making plots with multiple panels (subplots)
@@ -100,6 +100,7 @@ ax11 = plt.subplot(gs[1, 1])
 
 ### More complicated approach 
 * with more fine grained control
+
 ```Python
 fig = plt.figure()
 ax1 = fig.add_subplot(<row_no>, <col_no>, <plot_no_1>)
@@ -109,6 +110,7 @@ ax2 = fig.add_subplot(<row_no>, <col_no>, <plot_no_2>)
 ax2.plot()
 ...
 # saving all the subplots
+
 fig.savefig("plot_name.png", bbox_inches='tight')
 ```
 
@@ -126,8 +128,8 @@ append `_r` to the name of the colormap, e.g. use `cubehelix_r` instead of `cube
 ## Rotate axis labels
 ```
 plt.xticks(rotation=45)
-
 ```
+
 [SO post](http://stackoverflow.com/questions/14852821/aligning-rotated-xticklabels-with-their-respective-xticks)
 
 Or
