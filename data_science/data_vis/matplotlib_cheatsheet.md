@@ -26,6 +26,7 @@
 - [legend](#legend)
 - [legend outside plot](#legend-outside-plot)
 
+
 <!-- tocstop -->
 
 # All things about contour plot
@@ -129,6 +130,7 @@ append `_r` to the name of the colormap, e.g. use `cubehelix_r` instead of `cube
 ```
 plt.xticks(rotation=45)
 ```
+j
 
 [SO post](http://stackoverflow.com/questions/14852821/aligning-rotated-xticklabels-with-their-respective-xticks)
 
@@ -139,6 +141,19 @@ locs, labels = plt.xticks()
 
 plt.setp(labels, rotation=90)
 plt.plot(x, delay)
+```
+
+# Changing major xticks intervals 
+If you want sparser / denser xtick labels, 
+
+```Python
+import matplotlib.ticker as plticker
+fig = plt.figure()
+ax = fig.add_subplot(<row_no>, <col_no>, <plot_no_1>)
+# this locator puts ticks at regular intervals of base 1.
+# increase this `base` to have sparser xticks
+loc = plticker.MultipleLocator(base=1.0) 
+ax.xaxis.set_major_locator(loc)
 ```
 
 ## Adjust subplots spacing
@@ -218,3 +233,5 @@ use `bbox_to_anchor` keyword
 ```
 plt.legend(loc="upper left", bbox_to_anchor=(1,1))
 ```
+
+
