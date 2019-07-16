@@ -130,3 +130,15 @@ display(df2.round(2))
 
 ### highlighting cells:
 [ref](https://stackoverflow.com/questions/41555678/highlighting-multiple-cells-in-different-colors-with-pandas)
+### Difference between iloc & loc
+```
+>>> df.index 
+4 5 6 1 2 3
+
+>>> df.iloc[:2]
+4 5 6 
+
+>>> df.loc[:2]
+4 5 6 1 2 
+```
+
