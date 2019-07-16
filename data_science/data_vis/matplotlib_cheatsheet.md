@@ -154,7 +154,9 @@ ax = fig.add_subplot(<row_no>, <col_no>, <plot_no_1>)
 # increase this `base` to have sparser xticks
 loc = plticker.MultipleLocator(base=1.0) 
 ax.xaxis.set_major_locator(loc)
+
 ```
+[SO ref](https://stackoverflow.com/questions/12608788/changing-the-tick-frequency-on-x-or-y-axis-in-matplotlib)
 
 ## Adjust subplots spacing
 [SO post](http://stackoverflow.com/questions/6541123/improve-subplot-size-spacing-with-many-subplots-in-matplotlib)
