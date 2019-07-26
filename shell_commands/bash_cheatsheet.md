@@ -44,8 +44,11 @@ pdsh   # issue commands to groups of hosts in parallel
 ```
 # Xargs 
 ```
-ls *.txt | xargs <OTHER BASH COMMAND>
+ls *.txt | xargs -n 1 <OTHER BASH COMMAND>
 ```
+If you want the bash command work on one file at a time, use `-n 1`
+otherwise adjust the integer after the `-n` flag
+[ref](https://www.thegeekstuff.com/2013/12/xargs-examples)
 
 # System monitoring
 ```
