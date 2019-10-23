@@ -97,12 +97,12 @@ A tarball / zip file will be created as `releases` on GitHub once you tag a spec
 [SO post1](http://stackoverflow.com/questions/1783405/git-checkout-remote-branch)
 [SO post2](http://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches-with-git)
 ```bash
+$ git branch -r  # list remote branches
 $ git fetch origin 
-$ git checkout -b test origin/test
+$ git checkout -b test origin/test  # checkout branch while tracking remote branch
 ```
 # Examine remote branches 
 ```
-$ git branch -r  # list remote branches
 $ git fetch --all  # make sure local repo knows the remote branches
 $ git pull --all   # pull remote branches
 ```
