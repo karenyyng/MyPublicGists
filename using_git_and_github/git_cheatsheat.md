@@ -9,7 +9,7 @@
     + [Show the content of each stash](#show-the-content-of-each-stash)
     + [Reapplying / popping a specific stash](#reapplying--popping-a-specific-stash)
   * [Tagging version of a commit](#tagging-version-of-a-commit)
-  * [Or if your git repository does not contain the remote branch, do:](#or-if-your-git-repository-does-not-contain-the-remote-branch-do)
+  * [Grab a remote branch and switch to it](#grab-a-remote-branch-and-switch-to-it)
 - [Examine remote branches](#examine-remote-branches)
   * [Copy dir/files from another branch](#copy-dirfiles-from-another-branch)
   * [How to unstage file so it does not get committed](#how-to-unstage-file-so-it-does-not-get-committed)
@@ -93,7 +93,7 @@ git push origin --tags
 ```
 A tarball / zip file will be created as `releases` on GitHub once you tag a specific commit.
 
-## Or if your git repository does not contain the remote branch, do:
+## Grab a remote branch and switch to it
 [SO post1](http://stackoverflow.com/questions/1783405/git-checkout-remote-branch)
 [SO post2](http://stackoverflow.com/questions/67699/how-do-i-clone-all-remote-branches-with-git)
 ```bash
