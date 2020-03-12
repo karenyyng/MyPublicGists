@@ -20,6 +20,8 @@
 - [Grep](#grep)
 - [Check hardware architecture](#check-hardware-architecture)
 - [Run command without fear of network disconnection](#run-command-without-fear-of-network-disconnection)
+- [Find the number of lines in a csv or text file](#find-the-number-of-lines-in-a-csv-or-text-file)
+- [Find the number of delimited columns in csv or text file](#find-the-number-of-delimited-columns-in-csv-or-text-file)
 - [Reference for a list of linux commands](#reference-for-a-list-of-linux-commands)
 
 <!-- tocstop -->
@@ -49,6 +51,20 @@ ls *.txt | xargs -n 1 <OTHER BASH COMMAND>
 If you want the bash command work on one file at a time, use `-n 1`
 otherwise adjust the integer after the `-n` flag
 [ref](https://www.thegeekstuff.com/2013/12/xargs-examples)
+
+## Xargs with argument manipulation
+[ref](https://superuser.com/questions/655264/xargs-i-replace-str-option-difference)
+```bash
+$ greadlink -f *.md | xargs -n1 -I{} ln -s {} ~/Desktop/
+```
+
+The flag `-I` specifies what symbols to use for symbol substitution.
+The above command grabs all the full path of markdown files in the current
+directory and symbollically link them to another folder. 
+The above command works for MacOS. If you use linux instead substitute
+`greadlink` with `readlink`.
+
+
 
 # System monitoring
 ```
