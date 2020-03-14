@@ -144,7 +144,7 @@ If you cannot print directly as log message in some special terminal types, use 
 # Grep 
 grep recursively from a specific file extension type
 ```
-grep -r -i --include \*.py $A_PATH
+grep -r -i --include \*.py $PATTERN_TO_GREP $A_PATH
 ```
 [link](https://stackoverflow.com/questions/12516937/grep-but-only-certain-file-extensions)
 
