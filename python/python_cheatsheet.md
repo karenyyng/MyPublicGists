@@ -120,10 +120,18 @@ You can read in a config file for parsing config settings for the logger.
 import logging
 logging.basicConfig(filename="debug.log",  # output log filename
                     level=logging.DEBUG)
+logging.Formatter("%(asctime)s;%(levelname)s;%(message)s",
+                  "%Y-%m-%d %H:%M:%S")
 logging.debug("Debug message")
 logging.info("if level is set to logging.INFO")
 logging.warning("This will be printed")
+logger = logging.getLogger()
+logger.level == logging.INFO
+
 ```
+`Debug` has a lower level number than `info` so debug messages are not shown in the
+above example. `Warning` has a higher level than `info` so warning messages are
+captured by the logger.
 
 ## Debug: when NO log file is written
 * check no `logging.DEBUG` or other `logging.*` lines are put before the `logging.basicConfig` line.
