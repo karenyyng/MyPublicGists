@@ -14,6 +14,7 @@
   * [displaying dataframe in Jupyter notebook](#displaying-dataframe-in-jupyter-notebook)
     + [rounding to 2 d.p. for floats](#rounding-to-2-dp-for-floats)
     + [highlighting cells:](#highlighting-cells)
+    + [Difference between iloc & loc](#difference-between-iloc--loc)
 
 <!-- tocstop -->
 

@@ -4,6 +4,8 @@
 
 - [All things about contour plot](#all-things-about-contour-plot)
   * [Contour plot with log axes](#contour-plot-with-log-axes)
+- [approach 1](#approach-1)
+- [approach 2](#approach-2)
   * [Making contour plot or so with log colors](#making-contour-plot-or-so-with-log-colors)
   * [similarly specifying color range for contour plot](#similarly-specifying-color-range-for-contour-plot)
   * [putting color bar on a different axis](#putting-color-bar-on-a-different-axis)
@@ -15,6 +17,7 @@
     + [Colormap](#colormap)
       - [Revert colormap](#revert-colormap)
   * [Rotate axis labels](#rotate-axis-labels)
+- [Changing major xticks intervals](#changing-major-xticks-intervals)
   * [Adjust subplots spacing](#adjust-subplots-spacing)
   * [colorbar label size](#colorbar-label-size)
 - [plot frame](#plot-frame)
@@ -25,7 +28,6 @@
 - [pandas KDE](#pandas-kde)
 - [legend](#legend)
 - [legend outside plot](#legend-outside-plot)
-
 
 <!-- tocstop -->
 

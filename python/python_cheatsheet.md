@@ -116,15 +116,16 @@ logging module is part of standard Python.
 [tutorials from python doc](https://docs.python.org/2/library/logging.config.html)
 [other tutorial](http://docs.python-guide.org/en/latest/writing/logging/) for parsing config settings from an ini file
 You can read in a config file for parsing config settings for the logger.
-```
+```python
 import logging
 import datetime as dt
 import pytz
-logging.basicConfig(filename="debug.log",  # output log filename
-                    level=logging.INFO,   # set the verbosity using level 
-                    format="%(asctime)s %(levelname)s: %(message)s",
-										datefmt="%Y-%m-%d %H:%M:%S",
-										)
+logging.basicConfig(
+    filename="debug.log",  # output log filename
+    level=logging.INFO,   # set the verbosity using level 
+    format="%(asctime)s %(levelname)s: %(message)s",   
+    datefmt="%Y-%m-%d %H:%M:%S"
+)
 # set the timezone of the displayed time in the log									
 logging.Formatter.converter = lambda *args: dt.datetime.now(
     tz=pytz.timezone('America/Los_Angeles')).timetuple()

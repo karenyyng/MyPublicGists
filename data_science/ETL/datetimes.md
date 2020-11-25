@@ -1,3 +1,11 @@
+# Table of content
+
+<!-- toc -->
+
+- [checking types](#checking-types)
+
+<!-- tocstop -->
+
 # checking types 
 ```
 import datetime as dt
