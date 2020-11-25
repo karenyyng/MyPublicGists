@@ -121,8 +121,8 @@ import logging
 import datetime as dt
 import pytz
 logging.basicConfig(filename="debug.log",  # output log filename
-                    level=logging.DEBUG,   # set the verbosity using level 
-                    format="%(asctime)s %(message)s",
+                    level=logging.INFO,   # set the verbosity using level 
+                    format="%(asctime)s %(levelname)s: %(message)s",
 										datefmt="%Y-%m-%d %H:%M:%S",
 										)
 # set the timezone of the displayed time in the log									
@@ -132,9 +132,9 @@ logging.debug("Debug message")
 logging.info("if level is set to logging.INFO")
 logging.warning("This will be printed")
 logger = logging.getLogger()
-logger.level == logging.INFO
-
+logger.level = logging.DEBUG
 ```
+
 `Debug` has a lower level number than `info` so debug messages are not shown in the
 above example. `Warning` has a higher level than `info` so warning messages are
 captured by the logger.
