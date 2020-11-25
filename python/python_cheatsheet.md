@@ -147,15 +147,17 @@ Use `logging.warning` to make sure all formatting is ok.
 
 # Using the argument parser 
 See [examples](https://docs.python.org/3/library/argparse.html#example)
-```
+```python
 import argparse
 
 parser = argparse.ArgumentParser(
-          description="Visualize DM subhalos in 3D for specific cluster.")
-parser.add_argument("clstNo", type=int, default=10,
-                    help="Zeroth based numbering of cluster number")
-parser.add_argument("--debug", action='store_true', 
-										help='Supply flag to turn on debugging mode')
+    description="Visualize DM subhalos in 3D for specific cluster.")
+parser.add_argument(
+    "clstNo", type=int, default=10,
+    help="Zeroth based numbering of cluster number")
+parser.add_argument(
+    "--debug", action='store_true', 
+		help='Supply flag to turn on debugging mode')
 args = parser.parse_args()
 # the parsed argument can be accessed 
 # as the first string of the `add argument` method
