@@ -22,6 +22,7 @@
   * [approach with more fine-grained control](#approach-with-more-fine-grained-control)
   * [Finding array types](#finding-array-types)
 - [Handling date types](#handling-date-types)
+- [Using type annotation](#using-type-annotation)
 
 <!-- tocstop -->
 
@@ -209,7 +210,7 @@ from dateutils.relativedelta import relativedelta
 dt.datetime.today() + relativedelta(months=3)
 ```
 
-# Type annotation 
+# Using type annotation 
 ```python
 
 from typing import List, Set, Dict, Tuple, Union, Optional
