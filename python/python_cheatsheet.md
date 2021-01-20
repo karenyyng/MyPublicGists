@@ -208,3 +208,31 @@ from dateutils.relativedelta import relativedelta
 # get date 3 months from today
 dt.datetime.today() + relativedelta(months=3)
 ```
+
+# Type annotation 
+```python
+
+from typing import List, Set, Dict, Tuple, Union, Optional
+from collections import OrderedDict, namedtuple
+import numpy as np
+import pandas as pd
+import datetime as dt
+
+age: int = 5
+
+def a_function(
+	  a: str, 
+		b: float, 
+		c: int, 
+		d: float=10.0, 
+		e: Optional[int]=0,
+		) -> Union[np.array, List[str]]:
+	if a == "True":
+ 			return ["stuff"]
+	else:
+			return np.arange(c)
+this_dict: Dict[dt.date: float] = {dt.date(2021, 1, 20): 1.} 
+this_df: pd.DataFrame=pd.DataFrame([1.0], index=[0])
+```
+- [tutorial 1](https://dev.to/dstarner/using-pythons-type-annotations-4cfe)
+- [detailed tutorial 2](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
