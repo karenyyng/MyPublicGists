@@ -4,7 +4,6 @@
 
 - [Return sorted index of a list](#return-sorted-index-of-a-list)
 - [Transposing list of lists](#transposing-list-of-lists)
-- [Adding types hints to function definitions](#adding-types-hints-to-function-definitions)
 - [Objects don't know their own names](#objects-dont-know-their-own-names)
 - [List comprehension with `if`, `else`](#list-comprehension-with-if-else)
 - [Regular expression](#regular-expression)
@@ -27,21 +26,10 @@
 <!-- tocstop -->
 
 # Return sorted index of a list 
-[ref](http://stackoverflow.com/questions/7851077/how-to-return-index-of-a-sorted-list)
+- [ref](http://stackoverflow.com/questions/7851077/how-to-return-index-of-a-sorted-list)
 
 # Transposing list of lists
-[ref](http://stackoverflow.com/questions/6473679/python-list-of-lists-transpose-without-zipm-thing)
-
-# Adding types hints to function definitions 
-[ref1](https://docs.python.org/3/library/typing.html)
-[ref2](https://www.python.org/dev/peps/pep-3107/#syntax)
-[SO answers](https://stackoverflow.com/questions/38727520/adding-default-parameter-value-with-type-hint-in-python)
-
-
-```
-def this_function(a: str, b: str = "hello", c: dict = {}):
-	return
-```
+- [ref](http://stackoverflow.com/questions/6473679/python-list-of-lists-transpose-without-zipm-thing)
 
 # Objects don't know their own names 
 [SO post](http://stackoverflow.com/questions/2553354/how-to-get-a-variable-name-as-a-string-in-python)
