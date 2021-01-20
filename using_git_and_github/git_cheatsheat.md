@@ -176,3 +176,37 @@ this pushes local branch to remote and start tracking it.
 ```
 $ git grep <regexp> $(git rev-list --all)
 ```
+
+# Revert changes to specific commit by the SHA
+```python
+$ git stash save 'MESSAGE'
+$ git revert --hard $COMMIT_SHA
+```
+
+# Add specific hunk to commit 
+```bash
+$ git add -N NEW_FILE
+$ git add -p NEW_FILE
+```
+[SO post](https://stackoverflow.com/questions/14491727/git-add-patch-to-include-new-files)
+Then you should see 
+```bash
+Stage this hunk [y,n,q,a,d,/,s,e,?]?
+```
+You can then press `?`  for a help menu.
+```bash
+    y stage this hunk for the next commit
+    n do not stage this hunk for the next commit
+    q quit; do not stage this hunk or any of the remaining hunks
+    a stage this hunk and all later hunks in the file
+    d do not stage this hunk or any of the later hunks in the file
+    g select a hunk to go to
+    / search for a hunk matching the given regex
+    j leave this hunk undecided, see next undecided hunk
+    J leave this hunk undecided, see next hunk
+    k leave this hunk undecided, see previous undecided hunk
+    K leave this hunk undecided, see previous hunk
+    s split the current hunk into smaller hunks
+    e manually edit the current hunk
+    ? print hunk help
+```
