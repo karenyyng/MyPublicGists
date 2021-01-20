@@ -23,6 +23,8 @@
 - [File recovery commands](#file-recovery-commands)
 - [Create new local branch then push it to remote](#create-new-local-branch-then-push-it-to-remote)
 - [Grep files from previous commit](#grep-files-from-previous-commit)
+- [Revert changes to specific commit by the SHA](#revert-changes-to-specific-commit-by-the-sha)
+- [Add specific hunk to commit](#add-specific-hunk-to-commit)
 
 <!-- tocstop -->
 

@@ -1,3 +1,12 @@
+# Table of content
+
+<!-- toc -->
+
+- [Notes](#notes)
+- [Dependency for generating table of content](#dependency-for-generating-table-of-content)
+
+<!-- tocstop -->
+
 # Notes
 Follow these notes at your own peril.
 

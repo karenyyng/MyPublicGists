@@ -6,6 +6,7 @@
 - [Find full path to a file](#find-full-path-to-a-file)
 - [Running command in parallel : PDSH](#running-command-in-parallel--pdsh)
 - [Xargs](#xargs)
+  * [Xargs with argument manipulation](#xargs-with-argument-manipulation)
 - [System monitoring](#system-monitoring)
 - [Free memory from linux host](#free-memory-from-linux-host)
 - [List-of-open-files (lsof)](#list-of-open-files-lsof)
