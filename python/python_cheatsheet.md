@@ -107,6 +107,12 @@ logging module is part of standard Python.
 You can read in a config file for parsing config settings for the logger.
 ```python
 import logging
+logging.debug("Debug message")
+logging.info("if level is set to logging.INFO")
+logging.warning("This will be printed")
+```
+
+```python
 import datetime as dt
 import pytz
 logging.basicConfig(
@@ -118,16 +124,11 @@ logging.basicConfig(
 # set the timezone of the displayed time in the log									
 logging.Formatter.converter = lambda *args: dt.datetime.now(
     tz=pytz.timezone('America/Los_Angeles')).timetuple()
-logging.debug("Debug message")
-logging.info("if level is set to logging.INFO")
-logging.warning("This will be printed")
 logger = logging.getLogger()
-logger.level = logging.DEBUG
+logger.level = logging.INFO
 ```
-
-`Debug` has a lower level number than `info` so debug messages are not shown in the
-above example. `Warning` has a higher level than `info` so warning messages are
-captured by the logger.
+Then you can use the logger to log messages. 
+Note that `Debug` has a lower level number than `info` so debug messages are not shown by `logger.info("hello")`. `Warning` has a higher level than `info` so warning messages printed by `logger.warning` are displayed by the logger.
 
 ## Debug: when NO log file is written
 * check no `logging.DEBUG` or other `logging.*` lines are put before the `logging.basicConfig` line.
