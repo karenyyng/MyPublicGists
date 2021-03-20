@@ -47,7 +47,7 @@ Names of objects live in namespaces....
 import re
 ```
 [ref](https://docs.python.org/3/library/re.html)
-finding a match after a pattern
+finding a match after a pattern using `?<=`
 ```
 > match = re.findall("(?<=MemID =) ([0-9]+)", 'MemID = 000124, MemID = 0001234')
 ['000124', '0001234']
@@ -70,8 +70,14 @@ numbers repeating between 8 to 10 times
 ## Optional match
 ```Python
 >>> match = re.search("home(brew)?", "home")
->>> match.group(1)
+# the brew part is optional, the patterns match both home & homebrew
+>>> match.group(0)
 home
+
+>>> match = re.search("home(brew)?", "homebrew")
+>>> match.group(0)
+homebrew
+
 ```
 
 ## Differences between `()` and `[]`
@@ -80,9 +86,16 @@ home
 
 
 ## Differences between `re.match` and `re.search`
-`match()` function only checks if the RE matches at the beginning of the string while `search()` will scan forward through the string for a match
+- `match()` function only checks if the RE matches at the beginning of the string 
+- while `search()` will scan forward through the string for a match
+
 [reference](https://docs.python.org/2/howto/regex.html#match-versus-search)
 
+## other patterns
+- `^` negation
+- `\w` any lower case alphabets
+- `\W` any upper case alphabets
+- `\d` any digits
 
 # Namespaces for python variables
 ```Python
@@ -230,8 +243,10 @@ this_df: pd.DataFrame=pd.DataFrame([1.0], index=[0])
 # sorting a dictionary and return a tuple
 ## sort by the value 
 ```python
-sorted_tuple = sorted(
+>>> sorted_tuple = sorted(
 	word_count_dict.items(), key=lambda kv: kv[1], reverse=True)
+>>> sorted_tuple
+[(k1, v1), (k2, v2)]
 ```
 ## sort by the key
 ```python
