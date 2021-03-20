@@ -226,3 +226,13 @@ this_df: pd.DataFrame=pd.DataFrame([1.0], index=[0])
 ```
 - [tutorial 1](https://dev.to/dstarner/using-pythons-type-annotations-4cfe)
 - [detailed tutorial 2](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
+
+# sorting a dictionary
+## sort by the value 
+```python
+sorted(word_count_dict.items(), key=lambda kv: kv[1], reverse=True)
+```
+## sort by the key
+```python
+sorted(word_count_dict, reverse=True)
+```
