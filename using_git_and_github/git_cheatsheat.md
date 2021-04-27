@@ -212,3 +212,8 @@ You can then press `?`  for a help menu.
     e manually edit the current hunk
     ? print hunk help
 ```
+
+# Updating a submodule
+```
+git pull --recurse-submodules
+```
