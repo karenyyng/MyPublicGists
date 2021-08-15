@@ -16,3 +16,7 @@ https://github.com/jonschlinkert/markdown-toc#install
 ```
 npm install -g --save markdown-toc
 ```
+# How to refresh Table Of Content for the markdown files
+```
+$ python generate_toc.py
+```
