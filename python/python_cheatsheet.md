@@ -11,6 +11,7 @@
   * [Optional match](#optional-match)
   * [Differences between `()` and `[]`](#differences-between--and-)
   * [Differences between `re.match` and `re.search`](#differences-between-rematch-and-research)
+  * [other patterns](#other-patterns)
 - [Namespaces for python variables](#namespaces-for-python-variables)
 - [Concatenating dictionaries and list:](#concatenating-dictionaries-and-list)
 - [Logging](#logging)
@@ -22,6 +23,9 @@
   * [Finding array types](#finding-array-types)
 - [Handling date types](#handling-date-types)
 - [Using type annotation](#using-type-annotation)
+- [sorting a dictionary and return a tuple](#sorting-a-dictionary-and-return-a-tuple)
+  * [sort by the value](#sort-by-the-value)
+  * [sort by the key](#sort-by-the-key)
 
 <!-- tocstop -->
 

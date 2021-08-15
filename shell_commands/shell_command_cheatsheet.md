@@ -14,6 +14,8 @@
 - [Watching log files](#watching-log-files)
 - [Watching job](#watching-job)
 - [Find position in job queue](#find-position-in-job-queue)
+- [Uncompress tar.gz files](#uncompress-targz-files)
+- [Compress tar.gz files](#compress-targz-files)
 - [Transfer files between machines](#transfer-files-between-machines)
 - [Count no. of columns in a csv file](#count-no-of-columns-in-a-csv-file)
 - [Changing permission with umask](#changing-permission-with-umask)
@@ -112,6 +114,15 @@ change the output every 120 seconds
 # Find position in job queue
 ```
 squeue -p knl | grep -B 10000000 karenyng | wc -l
+```
+# Uncompress tar.gz files
+```bash
+tar czvf FOLDER_TO_TAR.tar.gz $PATH_TO_FOLDER
+```
+
+# Compress tar.gz files
+```bash
+tar xzvf $PATH_TO_TARBALL.tar.gz
 ```
 
 # Transfer files between machines 
