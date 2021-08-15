@@ -117,12 +117,12 @@ squeue -p knl | grep -B 10000000 karenyng | wc -l
 ```
 # Uncompress tar.gz files
 ```bash
-tar czvf FOLDER_TO_TAR.tar.gz $PATH_TO_FOLDER
+tar xzvf $PATH_TO_TARBALL.tar.gz
 ```
 
 # Compress tar.gz files
 ```bash
-tar xzvf $PATH_TO_TARBALL.tar.gz
+tar czvf FOLDER_TO_TAR.tar.gz $PATH_TO_FOLDER
 ```
 
 # Transfer files between machines 
