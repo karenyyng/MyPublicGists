@@ -183,7 +183,7 @@ $ git grep <regexp> $(git rev-list --all)
 # Revert changes to specific commit by the SHA
 ```python
 $ git stash save 'MESSAGE'
-$ git revert --hard $COMMIT_SHA
+$ git reset --hard $COMMIT_SHA
 ```
 
 # Add specific hunk to commit 
