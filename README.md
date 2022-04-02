@@ -4,6 +4,7 @@
 
 - [Notes](#notes)
 - [Dependency for generating table of content](#dependency-for-generating-table-of-content)
+- [How to refresh Table Of Content for the markdown files](#how-to-refresh-table-of-content-for-the-markdown-files)
 
 <!-- tocstop -->
 
