@@ -26,6 +26,9 @@
 - [Revert changes to specific commit by the SHA](#revert-changes-to-specific-commit-by-the-sha)
 - [Add specific hunk to commit](#add-specific-hunk-to-commit)
 - [Updating a submodule](#updating-a-submodule)
+- [Diff between branches but show file names with diffs](#diff-between-branches-but-show-file-names-with-diffs)
+- [Diff between branches](#diff-between-branches)
+- [Diff between branches but only for specific files](#diff-between-branches-but-only-for-specific-files)
 
 <!-- tocstop -->
 
@@ -217,4 +220,18 @@ You can then press `?`  for a help menu.
 # Updating a submodule
 ```
 git pull --recurse-submodules
+```
+# Diff between branches but show file names with diffs 
+```
+git diff --name-status <first branch>..<second branch>
+```
+
+
+# Diff between branches 
+```
+git diff branch1..branch2
+```
+# Diff between branches but only for specific files 
+```
+git diff <first branch> <second branch> -- myfile.ext
 ```
