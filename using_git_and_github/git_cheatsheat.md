@@ -176,7 +176,8 @@ $ git checkout -b new_branch
 <do work on new branch and commit>
 $ git push -u origin new_branch  
 ```
-this pushes local branch to remote and start tracking it.
+this pushes local branch to remote and start tracking it with the set
+up-stream branch flag `-u`.
 
 # Grep files from previous commit 
 ```
