@@ -61,12 +61,12 @@ finding a match after a pattern using `?<=`
 use 'PATTERN{n}' with n being the times that the pattern repeats
 e.g. 
 ```
-> re.search('12345678', '[0-9]{8}')
+> re.search('([0-9]{8})', '12345678')
 ```
 
 numbers repeating between 8 to 10 times
 ```
-> re.search('12345678', '[0-9]{8, 10}')
+> re.search('([0-9]{8, 10})', '12345678')
 ```
 
 [ref](https://stackoverflow.com/questions/4760215/running-shell-command-from-python-and-capturing-the-output)
@@ -244,7 +244,7 @@ this_df: pd.DataFrame=pd.DataFrame([1.0], index=[0])
 - [tutorial 1](https://dev.to/dstarner/using-pythons-type-annotations-4cfe)
 - [detailed tutorial 2](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
 
-# sorting a dictionary and return a tuple
+# Sorting a dictionary and return a tuple
 ## sort by the value 
 ```python
 >>> sorted_tuple = sorted(
