@@ -187,6 +187,11 @@ In the above example we were counting the number of ',' strings. [SO ref](https:
 `$NF` refers to the correct number of fields in the file, not the number of
 delimiters.
 
+# Find the process occupying certain port number then kill it
+```
+$ lsof -i :$PORT_NUMBER | xargs kill -9 
+```
+
 # Reference for a list of linux commands
 [ref link](http://www.oliverelliott.org/article/computing/ref_unix/)
 
